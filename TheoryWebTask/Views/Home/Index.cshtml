@@ -1,0 +1,86 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Theory by TEMPLATED</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../Content/css/main.css" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="inner">
+            <a href="index.html" class="logo">Theory</a>
+            @Html.Action("AllMenus","Menus")
+            <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+        <h1>Welcome to Theory</h1>
+        <p>A free responsive HTML5 website template by TEMPLATED.</p>
+    </section>
+
+    <!-- One -->
+    <section id="one" class="wrapper">
+        <div class="inner">
+            <div class="flex flex-3">
+                @Html.Action("AllLittleArticles","LittleArticles")
+            </div>
+        </div>
+    </section>
+
+    <!-- Two -->
+    <section id="two" class="wrapper style1 special">
+        <div class="inner">
+            <header>
+                <h2>Ipsum Feugiat</h2>
+                <p>Semper suscipit posuere apede</p>
+            </header>
+            <div class="flex flex-4">
+                @Html.Action("AllPeople","People")
+            </div>
+        </div>
+    </section>
+
+    <!-- Three -->
+    <section id="three" class="wrapper special">
+        <div class="inner">
+            <header class="align-center">
+                <h2>Nunc Dignissim</h2>
+                <p>Aliquam erat volutpat nam dui </p>
+            </header>
+            <div class="flex flex-2">
+                @Html.Action("AllBigArticles","BigArticles")
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="flex">
+                <div class="copyright">
+                    &copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+                </div>
+                <ul class="icons">
+                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
+                    <li><a href="#" class="icon fa-pinterest-p"><span class="label">Pinterest</span></a></li>
+                    <li><a href="#" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../Scripts/jquery.min.js"></script>
+    <script src="../../Scripts/skel.min.js"></script>
+    <script src="../../Scripts/util.js"></script>
+    <script src="../../Scripts/main.js"></script>
+
+</body>
+</html>

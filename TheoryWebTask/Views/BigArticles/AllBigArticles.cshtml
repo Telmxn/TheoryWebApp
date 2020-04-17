@@ -1,0 +1,16 @@
+﻿@model List<TheoryWebTask.Data.BigArticle>
+@foreach (var bigArticle in Model)
+{
+    <article>
+        <div class="image fit">
+            <img src="../../Content/images/@bigArticle.ImagePath" alt="Pic @bigArticle.Id" />
+        </div>
+        <header>
+            <h3>@bigArticle.Title</h3>
+        </header>
+        <p>@bigArticle.ShortDescription</p>
+        <footer>
+            <a href="#" class="button special">More</a>
+        </footer>
+    </article>
+}

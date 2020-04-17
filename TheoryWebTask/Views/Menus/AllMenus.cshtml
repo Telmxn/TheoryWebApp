@@ -1,0 +1,8 @@
+﻿@model List<TheoryWebTask.Data.Menu>
+
+<nav id="nav">
+    @foreach (var menu in Model)
+    {
+        <a href="#">@menu.Name</a>
+    }
+</nav>

@@ -1,0 +1,14 @@
+﻿@model List<TheoryWebTask.Data.LittleArticle>
+@foreach (var LittleArticle in Model)
+{
+    <article>
+        <header>
+            <h3>@LittleArticle.Title</h3>
+        </header>
+        <p>@LittleArticle.ShortDescription</p>
+        <footer>
+            <a href="#" class="button special">More</a>
+        </footer>
+    </article>
+}
+

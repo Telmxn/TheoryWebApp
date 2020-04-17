@@ -1,0 +1,11 @@
+﻿@model List<TheoryWebTask.Data.Person>
+@foreach (var person in Model)
+{
+    <div class="box person">
+        <div class="image round">
+            <img src="../../Content/images/@person.ImagePath" alt="Person @person.Id" />
+        </div>
+        <h3>@person.Name</h3>
+        <p>@person.WorkName</p>
+    </div>
+}
